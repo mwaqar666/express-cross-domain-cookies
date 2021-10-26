@@ -1,0 +1,33 @@
+{
+  "name": "main-domain",
+  "version": "1.0.0",
+  "description": "Subdomain 01",
+  "main": "dist/app.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "copy-assets": "copyfiles -u 2 src/html/**/* dist/html/",
+    "build": "npm-run-all clean tsc copy-assets",
+    "dev": "npm-run-all build start",
+    "dev:watch": "nodemon --watch src -e ts,html --exec npm run dev",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.6",
+    "copyfiles": "^2.4.1",
+    "nodemon": "^2.0.14",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1"
+  }
+}
