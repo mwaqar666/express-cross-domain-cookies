@@ -8,6 +8,6 @@ app.use(router);
 
 const port = 3000;
 
-app.listen(port, 'auth.beyondant.com', () => {
+app.listen(port, 'auth.application.com', () => {
 	console.log(`Application running on port ${port}`);
 });

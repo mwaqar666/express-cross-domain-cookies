@@ -6,6 +6,6 @@ app.use(router);
 
 const port = 3001;
 
-app.listen(port, 'api.main.beyondant.com', () => {
+app.listen(port, 'api.main.application.com', () => {
 	console.log(`Application running on port ${port}`);
 });
