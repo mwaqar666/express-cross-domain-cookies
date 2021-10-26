@@ -9,7 +9,7 @@ router.get('/', (request: Request, response: Response) => {
 
 router.post('/login', (request: Request, response: Response) => {
 	return response
-		.cookie('access_token', '123456789', { domain: '.beyondant.com', secure: false })
+		.cookie('access_token', '123456789', { domain: '.application.com', secure: false })
 		.sendFile(path.join(__dirname, '../html/auth.html'));
 });
 
